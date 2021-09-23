@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { ButtonToolbar, DropdownItem, DropdownButton, ButtonGroup, Button } from 'react-bootstrap';
+import { ButtonToolbar, Dropdown, DropdownButton, ButtonGroup, Button } from 'react-bootstrap';
 
 class Box extends React.Component {
 	selectBox = () => {
@@ -84,9 +84,9 @@ class Buttons extends React.Component {
 							id="size-menu"
 							onSelect={this.handleSelect}
 						>
-							<DropdownItem eventKey="1">20X10</DropdownItem>
-							<DropdownItem eventKey="2">50X30</DropdownItem>
-							<DropdownItem eventKey="3">70X50</DropdownItem>
+							<Dropdown.Item eventKey="1">20X10</Dropdown.Item>
+							<Dropdown.Item eventKey="2">50X30</Dropdown.Item>
+							<Dropdown.Item eventKey="3">70X50</Dropdown.Item>
 						</DropdownButton>
 					</ButtonToolbar>
 				</div>
